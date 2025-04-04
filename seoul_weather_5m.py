@@ -30,7 +30,7 @@ with open(csv_filename, "a", newline="") as file:
     if not file_exist:
         writer.writerow(header)
 
-    writer.writerow([time, temp])
+    writer.writerow([time+9*3600, temp])
 
     print("서울 기온 저장 완료!!")
 # 2025년 04월 04일 10월 55분: 12도
